@@ -1,0 +1,102 @@
+
+#container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+input {
+    background-color: #45d0ea;
+    height: 40px;
+}
+
+#sub {
+    background-color: #aaaaaa;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: auto;
+    margin: 50px auto;
+    border: 1.7px solid rgb(194, 165, 1);
+}
+table{
+    width: 1000px;
+    height: 460px;
+}
+.idd{
+    width: 50px;
+}
+.sub_header {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+.sub_sub_header{
+    width: 100%;
+}
+.add_staff{
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.fillter{
+    width: 33%;
+    float: left;
+    text-align: center;
+
+}
+.search{
+    width: 30%;
+    float: right;
+    text-align: center;
+
+}
+
+.detail{
+    border-color: rgb(185, 164, 1);
+    background-color: white;
+    text-align: center;
+    width: 80px;
+}
+.calender{
+    border-color: rgb(35, 165, 2);
+    background-color: white;
+    text-align: center;
+
+}
+.message{
+    border-color: rgb(2, 104, 145);
+    background-color: white;
+    text-align: center;
+
+}
+.edit{
+    border-color: rgb(186, 247, 4);
+    background-color: white;
+    text-align: center;
+    width: 80px;
+}
+.delete{
+    border-color: red;
+    background-color: white;
+    text-align: center;
+    width: 80px;
+}
+
+.add_staff_button{
+    color: rgb(225, 255, 0);
+    font-weight: bold;
+    background-color: rgb(1, 222, 130);
+    border-color: rgb(1, 222, 130);
+    text-align: center;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+}
