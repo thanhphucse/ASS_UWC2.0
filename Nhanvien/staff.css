@@ -2,10 +2,12 @@
 #container {
     text-align: center;
     padding-top: 20px;
+    height: 400px;
+    width: 100%;
 }
 
 input {
-    background-color: #45d0ea;
+    background-color: #cef8ff;
     height: 40px;
 }
 
@@ -28,9 +30,12 @@ td {
 }
 table{
     width: 1000px;
-    height: 460px;
+    height: 420px;
 }
 .idd{
+    width: 50px;
+}
+.type{
     width: 50px;
 }
 .sub_header {
@@ -64,30 +69,33 @@ table{
     background-color: white;
     text-align: center;
     width: 80px;
+    height: 25px;
 }
 .calender{
     border-color: rgb(35, 165, 2);
     background-color: white;
     text-align: center;
-
+    height: 25px;
 }
 .message{
     border-color: rgb(2, 104, 145);
     background-color: white;
     text-align: center;
-
+    height: 25px;
 }
 .edit{
     border-color: rgb(186, 247, 4);
     background-color: white;
     text-align: center;
     width: 80px;
+    height: 25px;
 }
 .delete{
     border-color: red;
     background-color: white;
     text-align: center;
     width: 80px;
+    height: 25px;
 }
 
 .add_staff_button{
@@ -97,6 +105,12 @@ table{
     border-color: rgb(1, 222, 130);
     text-align: center;
     width: 70%;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
+}
+label{
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+    /* position: absolute;  */
 }

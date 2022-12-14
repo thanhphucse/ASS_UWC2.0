@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="inner-header">
             <span class="menu">
                 <li><img src="./images/home.png" width="30px" class="icon"> <a href="./home.html">TRANG CHỦ
@@ -27,8 +27,10 @@
             </span>
         </div>
 
-    </header>
-
+    </header> -->
+    <?php
+        include('header.php');
+    ?>
     <!-- Thêm code của phần riêng mình -->
     <?php
     $con = mysqli_connect("localhost", 'root', '', "examples");
@@ -47,10 +49,10 @@
                 <a href="form_add.php"><button type="button" class="add_staff_button">Thêm nhân viên mới</button></a>
             </div>
             <div class="fillter">
-                Lọc
+                <img src="images/fill_staff.jpg" alt="fillstaff.jpg" style="width: 80%">
             </div>
             <div class="search">
-                Tìm kiếm
+                <img src="images/search_staff.jpg" alt="search_staff.jpg" style="width: 80%;">
             </div>
         </div>
         <div>
@@ -59,7 +61,7 @@
                     <th class="idd">ID</th>
                     <th>Full Name</th>
                     <th>User Name</th>
-                    <th>Type</th>
+                    <th class="type">Type</th>
                     <th>isBackOfficer</th>
                     <th>Action</th>
                 </tr>
@@ -84,6 +86,9 @@
                 }
                 ?>
             </table>
+            <div style="text-align:center;">
+                <img src="images/transision_bar.jpg" alt="" style="width: 300px; height: 40px">
+            </div>
         </div>
 
     </div>

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="staff.css">
     <title>Document</title>
 </head>
 
@@ -24,7 +25,7 @@
                 <li><img src="./images/user.png" width="30px" class="icon"><a href="#">ĐĂNG XUẤT</a> </li>
             </span>
         </div>
-
+        <p style="text-align: center; font-weight: bold">TRANG CHỦ/NHÂN VIÊN/CẬP NHẬT</p>
     </header>
     <?php
     $con = mysqli_connect("localhost", 'root', '', "examples");
@@ -40,12 +41,20 @@
     }
     ?>
     <form action="edit.php" method="POST">
-        id<input type="number" name="_id" value="<?php echo $id; ?>">
-        full_name<input type="text" name="_full_name" value="<?php echo $full_name; ?>">
-        user_name<input type="text" name="_user_name" value="<?php echo $user_name; ?>">
-        type<input type="text" name="_type" value="<?php echo $type; ?>">
-        isBackOfficer<input type="number" name="_isBackOfficer" value="<?php echo $isBackOfficer; ?>">
-        <input type="submit" value="submit">
+        <div>
+            <label>ID</label>
+            <input type="number" name="_id" value="<?php echo $id; ?>"><br></br>
+            <label>Full Name</label>
+            <input type="text" name="_full_name" value="<?php echo $full_name; ?>"><br></br>
+            <label>User Name</label>
+            <input type="text" name="_user_name" value="<?php echo $user_name; ?>"><br></br>
+            <label>Type</label>
+            <input type="text" name="_type" value="<?php echo $type; ?>"><br></br>
+            <label>isBackOfficer</label>
+            <input type="number" name="_isBackOfficer" value="<?php echo $isBackOfficer; ?>"><br></br>
+            <input type="submit" value="submit" style="width: 70px; height: 30px; float: right; background-color: rgb(1, 222, 130)">
+        </div>
+
     </form>
 
     <footer>
