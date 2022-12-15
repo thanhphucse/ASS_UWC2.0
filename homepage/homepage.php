@@ -11,23 +11,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="inner-header">
-            <span class="menu">
-                <li><img src="./images/home.png" width="30px" class="icon"> <a href="./homepage.html"><b>TRANG CHỦ</b>
-                    </a>
-                </li>
-                <li><a href="../Dashboard/dashboard.php">DASHBOARD</a> </li>
-                <li><a href="#">NHÂN VIÊN</a> </li>
-                <li><a href="#">PHƯƠNG TIỆN</a> </li>
-                <li><a href="#">QUẢN LÝ MCPs</a> </li>
-                <li><a href="#">GIAO CÔNG VIỆC</a> </li>
-                <li><img src="./images/user.png" width="30px" class="icon"><a href="#">ĐĂNG XUẤT</a> </li>
-            </span>
-        </div>
-    </header>
+    <?php include '../header/header.php';?>
 
-    <a href="#"><img src="./images/homepage.png" class="background"></a>
+    <img src="./images/homepage.png" class="background">
     <footer>
         <span>Organization X copyright © by Group2_L01</span>
     </footer>
