@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <link rel="stylesheet" href =  "https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src ="https://code.jquery.com/jquery-3.6.1.js"> </script>
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+        body{
+            background: url(../img/anhnen.jpg);
+            background-size: cover;
+            background-position: y;
+        }
+        ul{
+            list-style: none;
+        }
+        nav{
+            background-color:  rgb(217, 217, 217);
+        }
+        #main-gcv{
+            display: flex;
+            font-size: 13px;
+            justify-content: center;
+            align-items: center;
+        }
+        nav #main-gcv li a{
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+        }    
+        nav #main-gcv li::hover a{
+            background: #e31c1c;
+            transition: all 0.3s;
+        } 
+        #toggle{
+            display: none;
+            background: #353b48;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        footer {
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            width: 100%;
+            z-index: 100;
+            background-color: rgb(253, 145, 85);
+            height: 50px;
+        }
+
+        footer span {
+            position: fixed;
+            bottom: 8px;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        @media screen and (max-width: 768px){
+            #main-gcv{
+                flex-direction: column;
+                text-align: center;
+            }    
+            #toggle{
+                display: block;
+            }        
+        }  
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $("nav").slideToggle;
+            });
+        });
+    </script>
+	<header>
+		<nav class="nav nav-pills nav-fill nav-tabs">
+			<a class="nav-item nav-link" href="../homepage/homepage.php">TRANG CHỦ</a>
+			<a class="nav-item nav-link" href="../Dashboard/dashboard.php">DASHBOARD</a>
+			<a class="nav-item nav-link" href="../Nhanvien/index.php">NHÂN VIÊN</a>
+			<a class="nav-item nav-link" href="../Phuongtien/vehicle.php">PHƯƠNG TIỆN</a>
+			<a class="nav-item nav-link" href="../MCPs/manage_mcps.php">QUẢN LÝ MCPs</a>
+			<a class="nav-item nav-link active" href="../GiaoCongViec/gcv_tr.php">GIAO CÔNG VIỆC</a>
+			<a class="nav-item nav-link" href="../TienDo/tiendo.html">BÁO CÁO TIẾN ĐỘ</a>
+			<a class="nav-item nav-link" href="../index.html">ĐĂNG XUẤT</a>
+		</nav>
+	</header>
+ 
+    <div id="wrapper1">
+        <div class="container">
+            <div class="row justify-content-around">
+                <form  class="col-md-6 bg-light p-3">
+                    <h2 class= "text-center text-uppercase h3">Giao công việc</h2>
+                    <div class="form-group">
+                        <label for="nameassign"> Nội dung công việc</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="nameassign" id="garbage_collect" value="garbage_collect" class="form-check-input">
+                                <label for="nameassign" class="form-check-label"> Thu gom rác </label>                                                       
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="nameassign" id="Support" value="Support" class="form-check-input">
+                                <label for="nameassign" class="form-check-label"> Hổ trợ các đội khác </label>                                                      
+                            </div>
+                        </div>                        
+                    </div>                    
+                    <div class="form-group">
+                        <label for="fullname"> Họ và tên nhân viên thực hiện </label>
+                        <input type="text" name="fullname" id="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="address_asignin"> Vị trí bắt đầu nhiệm vu: </label>
+                        <input type="address" name="addresin" id="addressin" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="address_asignout"> Vị trí kết thúc nhiệm vu: </label>
+                        <input type="address" name="addressout" id="addressout"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="day_start"> Ngày bắt đầu  </label><br>
+                        <input type="date" name="day_start" id="day_startd" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="day_end"> Ngày Kết thúc  </label><br>
+                        <input type="date" name="day_end" id="day_end"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"> Điện thoại liên lạc</label>
+                        <input type="phone" name="phone" id="phone"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="note"> Ghi chú </label>
+                        <div>
+                            <textarea name="ghichu" id="" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="submit" class="btn btn-primary btn-block mt-4" class="form-control" name="btn-reg" href="./gcv_tr.php" value="Lên lịch" > 
+                        </div>
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </div> 
+    <nav >
+        <ul id="main-gcv" >
+        <footer>
+            <span>Organization X copyright © by Group2_L01</span>
+        </footer>
+        </ul>
+    </nav>
+    </body>
+</html>

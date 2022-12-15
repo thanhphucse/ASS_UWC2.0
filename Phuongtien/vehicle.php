@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <?php include "header.php"; ?>
+    <?php include "../header/header.php"; ?>
     <section>
         <h2>TRANG CHỦ / PHƯƠNG TIỆN</h2>
         <div id="general-vehicle">
@@ -50,7 +50,7 @@
                 <div class="brief">
                     Mã số phương tiện: L028 <br>
                     Sức chứa: 9 m<sup>3</sup><br>
-                    <button>Xem chi tiết</button>
+                    <a href="./detail.php"><button>Xem chi tiết</button></a>
                 </div>
             </div>
             <form>
