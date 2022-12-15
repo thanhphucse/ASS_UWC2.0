@@ -11,21 +11,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="inner-header">
-            <span class="menu">
-                <li><img src="./images/home.png" width="30px" class="icon"> <a href="../homepage/homepage.php">TRANG
-                        CHỦ</a>
-                </li>
-                <li><a href="./dashboard.php"><b>DASHBOARD</b></a> </li>
-                <li><a href="../Nhanvien/index.php">NHÂN VIÊN</a> </li>
-                <li><a href="#">PHƯƠNG TIỆN</a> </li>
-                <li><a href="#">QUẢN LÝ MCPs</a> </li>
-                <li><a href="#">GIAO CÔNG VIỆC</a> </li>
-                <li><img src="./images/user.png" width="30px" class="icon"><a href="#">ĐĂNG XUẤT</a> </li>
-            </span>
-        </div>
-    </header>
+	<?php include '../header/header.php';?>
     <div class="title">TRANG CHỦ/ DASHBOARD</div>
 
     <a href="#">
