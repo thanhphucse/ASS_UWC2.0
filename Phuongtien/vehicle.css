@@ -73,6 +73,24 @@ button:hover{
     background: lightgreen;
 }
 
+#add{
+    display: block;
+    margin-top: 50px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#add:hover{
+    background-color: #F5F5F5;
+}
+
+#add a{
+    text-decoration: none;
+    color: darkblue;
+}
+
 .notice{
     margin-top: 25px;
     background-color: lavenderblush;

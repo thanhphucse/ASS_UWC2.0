@@ -12,7 +12,9 @@
             header("Location:../homepage/homepage.php");
         }
         else{
+            header("login.html");
             echo "Thông tin đăng nhập không chính xác";
+            
         }
     }
 ?>

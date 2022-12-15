@@ -41,13 +41,16 @@
                 <div id="filter">
                     <button>Lọc</button>
                 </div>
+                <div id="add">
+                    <a href="./insert.php">Thêm phương tiện mới</a>
+                </div>
             </form>
             <div class="vehicle-img">
                 <img src="./images/L028.png">
                 <div class="brief">
                     Mã số phương tiện: L028 <br>
                     Sức chứa: 9 m<sup>3</sup><br>
-                    <a href="#"><button>Xem chi tiết</button></a>
+                    <button>Xem chi tiết</button>
                 </div>
             </div>
             <form>
