@@ -1,0 +1,84 @@
+h2{
+    text-align: center;
+    margin: 35px 0;
+}
+
+section{
+    display: block;
+}
+
+#general-vehicle{
+    display: flex; 
+}
+
+form{
+    flex: 1;
+    padding: 0 5%;
+}
+
+label{
+    display: inline-block;
+    width: 140px;
+}
+
+input{
+    margin-bottom: 50px;
+    width: 65%;
+    padding: 5px 0;
+    text-align: center;
+    font-family: inherit;
+}
+
+input:focus{
+    outline: none;
+}
+
+select{
+    font-family: inherit;
+    font-size: inherit;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 5px;
+    min-width: 150px;
+    text-align: center;
+}
+
+select:focus{
+    outline: none;
+}
+
+.vehicle-img{
+    flex: 2;
+    text-align: center;
+    line-height: 20px;
+}
+
+.vehicle-img img{
+    box-sizing: border-box;
+    width: 80%;
+}
+
+button{
+    padding: 8px 20px;
+    background-color: rgba(144, 238, 144, 0.5);
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 2px;
+    min-width: 120px;
+}
+
+button:hover{
+    background: lightgreen;
+}
+
+.notice{
+    margin-top: 25px;
+    background-color: lavenderblush;
+    padding: 10px 15px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px tomato;
+}
+

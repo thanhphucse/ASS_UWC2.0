@@ -1,0 +1,82 @@
+h2{
+    text-align: center;
+    margin: 35px 0;
+}
+
+section{
+    display: block;
+    padding: 0 15px;
+}
+
+#back{
+    margin-left: 25px;
+}
+
+#vehicle{
+    display: flex;
+    margin: 40px 5px 5px 40px;
+}
+
+#vehicle div{
+    flex: 1;
+    padding: 5px 10px;
+}
+
+#vehicle img{
+    width: 90%;
+    padding: 0 5%;
+}
+
+#vehicle .edit{
+    text-align: center;
+}
+
+#vehicle .detail{
+    line-height: 36px;
+    padding-left: 8%;
+}
+
+.detail input{
+    border: 0;
+    font-size: 16px;
+    font-family: Roboto;
+    color: black;
+    background: transparent;
+}
+
+.detail input:focus{
+    outline: none;
+}
+
+#vehicle table{
+    margin: 20px 0;
+    border-collapse: collapse;
+    box-shadow: 4px 4px 2px lightgrey;
+}
+
+td{
+    border: 1px solid grey;
+    padding: 6px 15px;
+    min-width: 15px;
+    text-align: center;
+}
+
+button{
+    padding: 8px 20px;
+    background-color: rgba(144, 238, 144, 0.5);
+    border: 0;
+    margin: 5px 0;
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 2px;
+    min-width: 160px;
+}
+
+button:hover{
+    background: lightgreen;
+}
+
+#change{
+    margin-top: 30px;
+    display: none;
+}
