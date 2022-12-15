@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php include "header.php"; ?>
+    <?php include "../header/header.php"; ?>
     <section>
         <h2>TRANG CHỦ / PHƯƠNG TIỆN / THÊM MỚI</h2>
         <div id="new-vehicle">

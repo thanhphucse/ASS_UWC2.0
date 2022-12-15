@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <?php include "header.php"; ?>
+    <?php include '../header/header.php';?>
     <section>
         <h2>TRANG CHỦ / PHƯƠNG TIỆN / CHI TIẾT</h2>
-        <a href="#" id="back">Quay lại</a>
+        <a href="./vehicle.php" id="back">Quay lại</a>
         <div id="vehicle">
             <div>
                 <img src="https://img.freepik.com/premium-photo/garbage-trucks-into-waste-emptying-containers-waste-disposal-isolate-white-background_454892-166.jpg?w=2000">
