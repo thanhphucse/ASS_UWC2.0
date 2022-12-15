@@ -60,10 +60,10 @@
                 ?>
             </div>
             <div style="width: 100%; text-align:center; padding-right: 500px;">
-                <a href="work_calender.php?id=<?php echo $row["ID"]; ?>"><button class="calender" type="button">lịch làm việc</button></a>
-                <a href="send_message.php?id=<?php echo $row["ID"]; ?>"><button class="message" type="button">gửi tin nhắn</button></a>
                 <a href="edit_form.php?id=<?php echo $row["ID"]; ?>"><button class="edit" "type=" button">cập nhật</button></a>
                 <a href="delete.php?id=<?php echo $row["ID"]; ?>"><button class="delete" "type=" button">xóa</button></a>
+                <a href="work_calender.php?id=<?php echo $row["ID"]; ?>"><button class="calender" type="button">lịch làm việc</button></a>
+                <a href="send_message.php?id=<?php echo $row["ID"]; ?>"><button class="message" type="button">gửi tin nhắn</button></a>
             </div>
         </div>
 

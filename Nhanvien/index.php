@@ -12,9 +12,8 @@
 </head>
 
 <body>
-    <?php
-        include('header.php');
-    ?>
+
+    <?php include '../header/header.php';?>
     <!-- Thêm code của phần riêng mình -->
     <?php
     $con = mysqli_connect("localhost", 'root', '', "examples");
@@ -60,10 +59,10 @@
                         <td><?php echo $row["isBackOfficer"]; ?></td>
                         <td>
                             <a href="detail.php?id=<?php echo $row["ID"]; ?>"><button class="detail" type="button">chi tiết</button></a>
+                            <a href="delete.php?id=<?php echo $row["ID"]; ?>"><button class="delete" "type="button">xóa</button></a>
+                            <a href="edit_form.php?id=<?php echo $row["ID"]; ?>"><button class="edit" "type="button">cập nhật</button></a>
                             <a href="work_calender.php?id=<?php echo $row["ID"]; ?>"><button class="calender" type="button">lịch làm việc</button></a>
                             <a href="send_message.php?id=<?php echo $row["ID"]; ?>"><button class="message" type="button">gửi tin nhắn</button></a>
-                            <a href="edit_form.php?id=<?php echo $row["ID"]; ?>"><button class="edit" "type="button">cập nhật</button></a>
-                            <a href="delete.php?id=<?php echo $row["ID"]; ?>"><button class="delete" "type="button">xóa</button></a>
                         </td>
                     </tr>
                 <?php

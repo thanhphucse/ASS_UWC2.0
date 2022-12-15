@@ -22,7 +22,7 @@
                 <li><a href="../Phuongtien/">PHƯƠNG TIỆN</a> </li>
                 <li><a href="../MCPs/">QUẢN LÝ MCPs</a> </li>
                 <li><a href="#">GIAO CÔNG VIỆC</a> </li>
-                <li><img src="./images/user.png" width="30px" class="icon"><a href="#">ĐĂNG XUẤT</a> </li>
+                <li><img src="./images/user.png" width="30px" class="icon"><a href="../login_out/login.html">ĐĂNG XUẤT</a> </li>
             </span>
         </div>
     </header>

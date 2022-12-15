@@ -19,6 +19,7 @@
 
     $sql = "UPDATE staff_db SET FULL_NAME = '$full_name', USER_NAME = '$user_name', TYPE = '$type', isBackOfficer = '$isBackOfficer' where id='$ID'";
     mysqli_query($con, $sql);
+    // mysqli_query($con, "INSERT INTO staff_db (FULL_NAME, USER_NAME, TYPE, isBackOfficer) VALUES('$fullName','$user_name', '$type', '$isBackOfficers')");
     header("Location:index.php");
     ?>
 </body>

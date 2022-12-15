@@ -40,7 +40,7 @@
         $isBackOfficer = $row['isBackOfficer'];
     }
     ?>
-    <form action="edit.php" method="POST">
+    <form action="edit.php" method="post">
         <div>
             <label>ID</label>
             <input type="number" name="_id" value="<?php echo $id; ?>"><br></br>
